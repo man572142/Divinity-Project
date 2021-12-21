@@ -75,6 +75,7 @@ public class Character : MonoBehaviour
 
         if (currentAP <= 0 && !movement.IsMoving())
         {
+            attack.CleanPathLine();
             ActiveCharater(false);
             turnBaseSystem.TurnFinished();
             return;
